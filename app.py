@@ -19,4 +19,16 @@ def about():
     <p>Days 1-45 completed.</p>
     """
 
+@app.route("/students")
+def students():
+    return """
+    <h2>Student List</h2>
+    <ul>
+        <li>Abdullah</li>
+        <li>Student 2</li>
+        <li>Student 3</li>
+    </ul>
+    """
+
 app.run(host="0.0.0.0", port=5000)
+
